@@ -42,8 +42,9 @@ Create a new python3 file.
 ```o = outlier.outlier(inputFilePath, outputFilePath)```
 ```o.outlier_main('z_score')```
 or    
-```o.outlier_main('iqr')```     
+```o.outlier_main('iqr')```       
 
+* NOTE : ```outlier_main()``` doesn't necessarily require any ```method``` argument , if no argument is provided, it uses z_score by default as the algorithm for removal of outliers from the dataset.    
 
 ### OUTPUT :
 Removes all the valid rows contaning outlier values from the dataset and prints the number of rows removed along with the columns which were considered for the algorithm.    
