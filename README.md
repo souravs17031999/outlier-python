@@ -22,20 +22,32 @@ The second quartile Q2 is the same as the ordinary median.
 
 ### Getting started Locally :  
 > Run On Terminal       
-  
+```python -m outlier.outlier inputFilePath outputFilePath z_score```     
+or
+```python -m outlier.outlier inputFilePath outputFilePath iqr```       
+ex. python -m outlier outlier C:/Users/DELL/Desktop/train.csv C:/Users/DELL/Desktop/output.csv z_score     
 
 > Run In IDLE   
-
+```from outlier import outlier```   
+```o = outlier.outlier(inputFilePath, outputFilePath)```     
+```o.outlier_main('z_score')```
+or    
+```o.outlier_main('iqr')```     
 
 > Run on Jupyter   
 Open terminal (cmd)   
 ```jupyter notebook```   
 Create a new python3 file.     
-
+```from outlier import outlier```   
+```o = outlier.outlier(inputFilePath, outputFilePath)```
+```o.outlier_main('z_score')```
+or    
+```o.outlier_main('iqr')```     
 
 
 ### OUTPUT :
 Removes all the valid rows contaning outlier values from the dataset and prints the number of rows removed along with the columns which were considered for the algorithm.    
+Also , the final dataframe will be written to the output file path you provided.
  
 
 # TESTING : 
