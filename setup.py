@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="outlier-python-souravdlboy",
-    version="0.1",
+    version="1.0",
     author="sourav kumar",
     author_email="sauravkumarsct@gmail.com",
     description="Python package for Outlier Removal Algorithm using z_score or iqr.",
