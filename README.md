@@ -49,6 +49,9 @@ or
 Removes all the valid rows contaning outlier values from the dataset and prints the number of rows removed along with the columns which were considered for the algorithm.    
 Also , the final dataframe will be written to the output file path you provided.
  
+![output result on jupyter](/test_images/t.JPG)
+![output result on idle](/test_images/t1.JPG)
+![output result on cmd](/test_images/t2.JPG) 
 
 # TESTING : 
 * The package has been extensively tested on various datasets consisting varied types of expected and unexpected input data and any preprocessing , if required has been taken care of.
