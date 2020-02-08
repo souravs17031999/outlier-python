@@ -45,7 +45,8 @@ or
 ```o.outlier_main('iqr')```       
 
 * NOTE : ```outlier_main()``` doesn't necessarily require any ```method``` argument , if no argument is provided, it uses ```z_score``` by default as the algorithm for removal of outliers from the dataset.    
-
+* The algorithm only reports missing data containing columns and not handles them, it assumes that it has been handled already.   
+Also in case of z-score method, it will not affect much, but it may be possible to give wrong output in case of IQR if missing values are found.    
 ### OUTPUT :
 Removes all the valid rows contaning outlier values from the dataset and prints the number of rows removed along with the columns which were considered for the algorithm.    
 Also , the final dataframe will be written to the output file path you provided.
