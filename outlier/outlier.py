@@ -1,8 +1,3 @@
-"""
-@ author : sourav kumar (101883068)
-@ made for UCS633 - PROJECT - II
-@ Timestamp : 2020 / 2 / 6 , 12 : 10 : 13 . 836206
-"""
 import numpy as np
 import pandas as pd
 import sys
